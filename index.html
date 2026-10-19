@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maria Vitória Marczinski — Portfólio Criativo</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8f1;--surface:#ffffff;--ink:#1d1a2f;--mute:#63607a;--accent:#ff5a4e;--accent2:#6c4cff;--line:#eadfd3;--hl:#ffd24a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15131f;--surface:#1f1c2e;--ink:#f6f1ea;--mute:#a8a4c0;--line:#33304a;--accent:#ff7468;--accent2:#9b86ff}}
+:root[data-theme="dark"]{--bg:#15131f;--surface:#1f1c2e;--ink:#f6f1ea;--mute:#a8a4c0;--line:#33304a;--accent:#ff7468;--accent2:#9b86ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+.hero-img{display:flex;justify-content:center;align-items:flex-end}
+.hero-img img{display:block;width:auto;max-width:100%;height:auto;max-height:460px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.2))}
+.m.bare{background:none;border:0;box-shadow:none;border-radius:0;overflow:visible;aspect-ratio:auto}
+.m.bare img{height:auto;object-fit:contain}
+.row.top{align-items:start}
+.m.auto{aspect-ratio:auto}
+.m.auto img,.m.auto video{height:auto}
+.row.wide{align-items:start}
+.m video{background:#000}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:700}
+nav .links{display:flex;gap:18px;font-size:.9rem;font-weight:500}
+nav a{text-decoration:none}nav a:hover{color:var(--accent)}
+.hero{padding:50px 0 70px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--hl);color:#1d1a2f;padding:4px 12px;border-radius:99px;font-size:.8rem;font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--mute);font-size:1.08rem;max-width:520px;margin:20px 0 28px}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;margin-right:10px}
+.btn.o{background:none;border:2px solid var(--ink);color:var(--ink)}
+.collage{position:relative;height:340px}
+.collage div{position:absolute;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+.c1{width:55%;height:55%;left:0;top:0;background:var(--accent);transform:rotate(-5deg)}
+.c2{width:48%;height:70%;right:0;top:12%;background:var(--accent2);transform:rotate(4deg)}
+.c3{width:60%;height:34%;left:12%;bottom:0;background:var(--hl);transform:rotate(-2deg)}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.lbl{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);margin-bottom:26px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+.about p{margin:0 0 14px;color:var(--mute)}
+.stats{display:grid;gap:14px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.stat b{font-family:'Fraunces',Georgia,serif;font-size:1.8rem;color:var(--accent2);display:block}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card .ic{font-size:1.8rem;margin-bottom:10px}
+.card h3{font-size:1.2rem;margin-bottom:8px}.card p{margin:0;color:var(--mute);font-size:.95rem}
+.cat{margin-bottom:46px}.cat:last-child{margin-bottom:0}
+.cathead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 14px;margin-bottom:16px}
+.cathead h3{font-size:1.5rem}
+.spec{font-size:.78rem;font-weight:700;color:var(--accent2);background:var(--surface);border:1px solid var(--line);padding:4px 12px;border-radius:99px}
+.row{display:grid;gap:14px;grid-template-columns:repeat(var(--n,4),1fr)}
+.m{position:relative;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.m img,.m video{display:block;width:100%;height:100%;object-fit:cover}
+.r45{aspect-ratio:1080/1350}.r916{aspect-ratio:1080/1920}.r169{aspect-ratio:16/9}.r34{aspect-ratio:3/4}
+.ph{display:grid;place-content:center;gap:6px;text-align:center;border:2px dashed var(--line);color:var(--mute);font-size:.8rem;font-weight:700;padding:10px}
+.ph:after{content:attr(data-ph)}
+.ph.v:before{content:"▶";font-size:1.5rem;color:var(--accent)}
+.tl{border-left:3px solid var(--accent);padding-left:24px;display:grid;gap:30px}
+.job{position:relative}
+.job:before{content:"";position:absolute;left:-33px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job .when{font-size:.82rem;color:var(--accent2);font-weight:700}
+.job h3{font-size:1.35rem;margin:2px 0 2px}.job .org{color:var(--mute);margin-bottom:8px}
+.job ul{margin:0;padding-left:18px;color:var(--mute)}.job li{margin-bottom:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:.88rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.contact{text-align:center}
+.contact h2{font-size:clamp(2rem,5vw,3.4rem)}
+.contact .btn{margin:6px}
+footer{padding:26px 0;text-align:center;color:var(--mute);font-size:.85rem}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero-img img{max-height:320px}.collage{height:240px}.row{grid-template-columns:repeat(2,1fr)}.row.wide{grid-template-columns:1fr}nav .links{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span>Maria Vitoria Marczinski<span style="color:var(--accent)">.</span></span><div class="links"><a href="#sobre">Sobre</a><a href="#trabalhos">Trabalhos</a><a href="#experiencia">Experiência</a><a href="#contato">Contato</a></div></nav>
+
+<header class="hero">
+<div>
+<span class="tag">Design • Social Media • Vídeo</span>
+<h1>Ideias que viram <em>posts, peças</em> e vídeos.</h1>
+<p>Sou Maria Vitória, atuo como designer gráfica, com foco na criação de conteúdos visuais para redes sociais e experiência no desenvolvimento de campanhas de marketing e materiais gráficos digitais e impressos.</p>
+<a class="btn" href="#trabalhos">Ver trabalhos</a><a class="btn o" href="#contato">Vamos conversar</a>
+</div>
+<div class="hero-img"><img src="/assets/img.png" alt="Maria Vitória"></div>
+</header>
+
+<section id="sobre">
+<div class="lbl">Sobre mim</div><h2>Criatividade com base técnica</h2>
+<div class="about">
+<div>
+<p>Sou Técnica em Manutenção e Suporte em Informática (IFRS Campus Sertão) e estudante de Redes de Computadores na UFSM.</p>
+<p>Atuei como Designer Gráfica na Porto Agência de Marketing, criando artes para redes sociais, banners e materiais impressos, sempre a partir de briefings e respeitando prazos e a identidade visual de cada marca.</p>
+<p>Também sou desenvolvedora web e atuo no marketing da CompactJR, a empresa júnior de TI da UFSM, com posts e campanhas. Gosto de comunicar bem, organizar equipes e apresentar projetos.</p>
+</div>
+<div class="stats">
+<div class="stat"><b>2 anos</b>criando para o digital e o impresso</div>
+<div class="stat"><b>6 ferramentas</b>Photoshop, Illustrator, Canva, Figma, Capcut e CorelDRAW</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="lbl">O que eu faço</div><h2>Áreas de atuação</h2>
+<div class="grid4">
+<div class="card"><h3>Redes sociais</h3><p>Feed, stories e carrosséis com identidade visual consistente e foco em engajamento.</p></div>
+<div class="card"><h3>Banners e web</h3><p>Peças para sites, com dimensões corretas, arquivos otimizados e padrão visual do projeto.</p></div>
+<div class="card"><h3>Materiais impressos</h3><p>Folders, cartões de visita, panfletos e cartazes com arquivos prontos para a gráfica.</p></div>
+<div class="card"><h3>Edição de vídeo</h3><p>Vídeos curtos e conteúdos para redes, com ritmo, cortes e identidade da marca.</p></div>
+</div>
+</section>
+
+<section id="trabalhos">
+<div class="lbl">Portfólio</div><h2>Trabalhos selecionados</h2>
+<!-- COMO USAR: cada card vazio é uma linha <div class="m ... ph" data-ph="..."></div>.
+Para preencher, troque a linha inteira por:
+  imagem: <div class="m r45"><img src="DADOS_DA_IMAGEM" alt="Descrição"></div>
+  vídeo:  <div class="m r916"><video src="DADOS_DO_VIDEO" controls playsinline preload="metadata"></video></div>
+Mantenha a classe de proporção (r45, r916, r169, r34). Para mais cards, duplique uma linha. -->
+<div class="cat">
+<div class="cathead"><h3>Posts</h3>
+<div class="row" style="--n:4">
+<div class="m r45"><img src="/assets/P35812---O-QUE-CADA-SEMENTE-CARREGA-DENTRO-DELAPrancheta-1.png" alt="Post 1"></div>
+<div class="m r45"><img src="/assets/P35143 - CAMPANHA- CONDIÇÃO ESPECIAL PULVERIZADORES DE SULCO MATERIALMATERIAL.jpg" alt="Post 2"></div>
+<div class="m r45"><img src="/assets/POST-3---Empresas-que-automatizam-ganhamfeed.png" alt="Post 3"></div>
+<div class="m r45"><img src="/assets/P35432 - SORTEIOFEED.jpg" alt="Post 4"></div>
+<div class="m r45"><img src="/assets/P35522 - BESS ARMAZENAMENTO INTELIGENTEfeed 1.jpg" alt="Post 5"></div>
+<div class="m r45"><img src="/assets/ppost.jpg" alt="Post 6"></div>
+<div class="m r45"><img src="/assets/P35792---GENÉTICA-QUE-VALORIZAFEED-1.png" alt="Post 7"></div>
+<div class="m r45"><img src="/assets/P32305---DESCUBRA-QUANTO-VOCÊ-PODE-ECONOMIZAR.feed.png" alt="Post 8"></div>
+</div></div>
+<div class="cat">
+<div class="cathead"><h3>Stories</h3></div>
+<div class="row" style="--n:5">
+<div class="m r916"><img src="/assets/POST 9 - É muito carostory.jpg" alt="Story 1"></div>
+<div class="m r916"><img src="/assets/P35196 - MAIS PRECISÃO EM CADA HECTARE DESDE O INÍCIO DA SAFRA. (GPS)STORY.jpg" alt="Story 2"></div>
+<div class="m r916"><img src="/assets/P35443 - NÃO DEIXE A PLANTADEIRA PARA DEPOIS.STORY.jpg" alt="Story 3"></div>
+<div class="m r916"><img src="/assets/P33503---SEU-TELHADO-ESTÁ-SEGURANDO-O-FRIO-LÁ-FORASTORY.png" alt="Story 4"></div>
+<div class="m r916"><img src="/assets/P35126 - ENLONAR NÃO PRECISA SER UM TRABALHO PESADOPrancheta 2.jpg" alt="Story 6"></div>
+</div></div>
+<div class="cat">
+<div class="cathead"><h3>Vídeos</h3></div>
+<div class="row" style="--n:5">
+<div class="m r916"><video src="/assets/03.mp4" poster="/assets/Capa 03capa.jpg" controls playsinline preload="none"></video></div>
+<div class="m r916"><video src="/assets/04.mp4" poster="/assets/04capa.jpg" controls playsinline preload="none"></video></div>
+</div></div>
+<div class="cat">
+<div class="cathead"><h3>Banners</h3></div>
+<div class="row wide" style="--n:2">
+<div class="m auto"><img src="/assets/ING desktop copiar 2.jpg" alt="Banner 1"></div>
+<div class="m auto"><img src="/assets/P30456---BANNER-SITEFUNDO.png" alt="Banner 2"></div>
+<div class="m auto"><img src="/assets/P35303---BANNER-A-PEÇA-QUE-VOCÊ-PRECISA-EXPORTAR-desktop.jpg" alt="Banner 3"></div>
+<div class="m auto"><img src="/assets/P23253--BANNER--Transforme-seu-tratorBANNER.png" alt="Banner 4"></div>
+<div class="m auto"><img src="/assets/P35298 - BANNER O TEMPO PASSADESKTOP.jpg" alt="Banner 5"></div>
+<div class="m auto"><img src="/assets/P35302---BANNER-INOCULAÇÃO-NA-SILAGEM-COM-MAIS-PRATICIDADE.jpg" alt="Banner 6"></div>
+</div></div>
+<div class="cat">
+<div class="cathead"><h3>Materiais impressos</h3></div>
+<div class="row top" style="--n:4">
+<div class="m bare"><img src="/assets/mockups-catalogoPrancheta-1.png" alt="Impresso 1"></div>
+<div class="m bare"><img src="/assets/mockups-bannerPrancheta-1.png" alt="Impresso 1"></div>
+<div class="m bare"><img src="/assets/mockups-pastaPrancheta-1.png" alt="Impresso 1"></div>
+<div class="m bare"><img src="/assets/mockupsPrancheta-3.png" alt="Impresso 1"></div>
+</div></div>
+</section>
+
+<section id="experiencia">
+<div class="lbl">Trajetória</div><h2>Experiência profissional</h2>
+<div class="tl">
+<!-- <div class="job"><div class="when">01/2026 – 09/2026</div><h3>Desenvolvedora Júnior</h3><div class="org">Ímpar Agência Web</div>
+<ul><li>Desenvolvimento e manutenção de sites e sistemas com PHP, CodeIgniter (MVC), HTML, CSS e JavaScript.</li><li>Cadastros, formulários e consultas com MySQL, além de correção de bugs e melhorias.</li><li>Monitoramento de sites e sistemas e resolução de incidentes.</li><li>Administração de e-mails, domínios e hospedagem na Locaweb, com suporte aos usuários.</li><li>Relatórios técnicos de desempenho, acessos e atividades.</li></ul></div> -->
+<div class="job"><div class="when">05/2025 – 01/2026</div><h3>Designer Gráfica</h3><div class="org">Porto Agência de Marketing</div>
+<ul><li>Artes para redes sociais (feed, stories e carrosséis) mantendo a identidade visual das marcas.</li><li>Banners e peças gráficas para sites, com otimização de arquivos.</li><li>Impressos: folders, cartões de visita, panfletos e cartazes, preparados para a gráfica.</li><li>Trabalho a partir de briefings, com ajustes e entregas no prazo.</li></ul></div>
+<div class="job"><div class="when">04/2026 – 03/2027</div><h3>Marketing e desenvolvimento</h3><div class="org">CompactJR — Empresa Júnior de TI da UFSM</div>
+<ul><li>Posts e campanhas para divulgar os serviços e fortalecer a marca.</li><li>Participação em projetos reais, como sites.</li></ul></div>
+<div class="job"><div class="when">08/2026 – 12/2026</div><h3>Design inclusivo e usabilidade</h3><div class="org">Tecnologia educacional para cuidadores de idosos com Alzheimer (UFSM)</div>
+<ul><li>Colaboração em design inclusivo e usabilidade do aplicativo, buscando uma experiência acessível.</li></ul></div>
+</div>
+</section>
+
+<section>
+<div class="lbl">Destaques acadêmicos</div><h2>Projetos e liderança</h2>
+<div class="grid4">
+<div class="card"><h3>Shark Tank TMSI</h3><p>2024 – Competidora: desenvolvimento de empresa fictícia, identidade visual, protótipo no Figma, planejamento financeiro. <p>2023 – Organizadora do evento. </p></p></div>
+<div class="card"><h3>Eventos do IFRS</h3><p>Apresentadora na Feira do Conhecimento e no Seminário de Educação Profissional e Tecnológica (2024).</p></div>
+<div class="card"><h3>Projeto de Ensino</h3><p>Bolsista em 2024: Projeto com foco na gestão e na evolução da Semana da Juventude, evento com grande importancia histórica no campus, com coordenação de equipes, contato com parceiros, divulgação e gestão de atividades.</p></div>
+</div>
+</section>
+
+<section>
+<div class="lbl">Ferramentas e habilidades</div><h2>Meu kit</h2>
+<div class="skills">
+<div><h3>Design</h3><div class="chips"><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">Canva</span><span class="chip">CapCut</span><span class="chip">Figma</span><span class="chip">CorelDRAW</span></div></div>
+<div><h3>Marketing e conteúdo</h3><div class="chips"><span class="chip">Posts e campanhas</span><span class="chip">Edição de vídeo</span><span class="chip">Design inclusivo</span><span class="chip">Usabilidade</span></div></div>
+<div><h3>Tecnologia</h3><div class="chips"><span class="chip">PHP</span><span class="chip">CodeIgniter</span><span class="chip">MySQL</span><span class="chip">HTML/CSS/JS</span><span class="chip">Windows Server 2016</span><span class="chip">Locaweb</span></div></div>
+<div><h3>Formação e idiomas</h3><div class="chips"><span class="chip">Redes de Computadores — UFSM</span><span class="chip">Técnico em Informática — IFRS</span><span class="chip">Inglês B1</span></div></div>
+</div>
+</section>
+
+<section id="contato" class="contact">
+<div class="lbl">Contato</div><h2>Vamos criar algo juntos?</h2>
+<p style="color:var(--mute)">Santa Maria, RS • disponível para novos projetos</p>
+<a class="btn" href="mailto:mariavitoriamarczinski@gmail.com">E-mail</a>
+<a class="btn o" href="https://wa.me/5554996980345">WhatsApp</a>
+<a class="btn o" href="https://www.linkedin.com/in/maria-vitoria-marczinski">LinkedIn</a>
+</section>
+<footer>© 2026 Maria Vitória Marczinski</footer>
+</div>
+</body>
+</html>
